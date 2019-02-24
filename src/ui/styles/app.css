@@ -1,0 +1,10 @@
+
+body {
+  font-family: 'Helvetica';
+}
+
+.menu .link {
+  display: inline-block;
+  padding: 10px;
+  background: rgba(0,0,0,.05);
+}

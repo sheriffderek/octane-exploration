@@ -1,5 +1,26 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
+<h1 class='app-name'>
+  {{appName}}
+</h1>
+
+
+<nav class='menu'>
+
+  {{!-- inline use of 'link-to' helper --}}
+  {{link-to "Welcome" 'welcome' class='link'}}
+
+  {{!-- block usage --}}
+  {{#link-to 'things' class='link'}}
+    <span>/things</span>
+  {{/link-to}}
+
+  {{!-- {{link-to "/" 'application' class='link'}} --}}
+
+  {{link-to "Sign-in" 'sign-in' class='link'}}
+
+</nav>
+
+
+{{!-- This is where the subroutes will be rendered --}}
 {{outlet}}
+{{!-- add them where they are needed based on your project --}}

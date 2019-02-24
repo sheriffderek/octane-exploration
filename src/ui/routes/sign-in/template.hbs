@@ -1,0 +1,18 @@
+
+<form {{action 'signIn' on='submit'}}>
+  
+  <label for=''>
+    <div class='label'>Username</div>
+    {{input value=name}}
+  </label>
+
+  <button type='submit'>
+    sign in
+  </button>
+</form>
+
+Current User: {{ccc.currentUser}}
+
+{{#if session.currentUser}}
+  Current User: {{session.currentUser}}
+{{/if}}

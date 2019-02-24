@@ -1,0 +1,20 @@
+
+<p>list of items could go here</p>
+
+{{!-- 
+
+<ul class='thing-list'>
+  {{#each model as |item|}}
+    <li class='item'>
+      {{item.name}}
+    </li>
+  {{/each}}
+</ul>
+
+ --}}
+
+{{!-- OR you could make a reusable component --}}
+
+<ThingList @things={{model}} />
+
+{{!-- see /src/ui/components/component-name --}}
